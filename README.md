@@ -9,8 +9,8 @@ If no existing workout aligns with the user's preferences, the application can c
 
 ## Project Architcture
 
-![flex-diagram](https://github.com/tTomeRr/Flex/assets/129614080/e4611cb6-6e7a-4cf7-9a84-ba58c62671d1)
-![sql](https://github.com/tTomeRr/Flex/assets/129614080/2f0f7b01-69f1-4cc6-bdb9-0df4424966ce)
+![flex-diagram](images/workflow.png)
+![sql](images/db.png)
 
 
 ## Installation and Setup Instructions
@@ -19,7 +19,7 @@ If no existing workout aligns with the user's preferences, the application can c
 
 2. Clone this repository.
    
-  `git clone https://github.com/tTomeRr/Flex.git`
+  `git clone https://github.com/yishaigalili/Flex.git`
 
 3. Navigate to the repository on your computer
 
@@ -57,9 +57,9 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 
 ## Screenshots
-![Screenshot 1](https://github.com/tTomeRr/Flex/assets/129614080/ee9e5746-6ac4-4cad-9ea9-6ca602fd30f2)
-![Screenshot 2](https://github.com/tTomeRr/Flex/assets/129614080/f591c817-3238-41f0-8728-65aa5b2ac304)
-![Screenshot 3](https://github.com/tTomeRr/Flex/assets/129614080/9746f700-25a3-4308-8ee7-eccb3e7b90c1)
-![Screenshot 4](https://github.com/tTomeRr/Flex/assets/129614080/8c066a39-a573-4ad8-b483-06fd37f76444)
-![Screenshot 5](https://github.com/tTomeRr/Flex/assets/129614080/b53df931-bbd5-41ff-a08e-49c9253a9a0a)
-![Screenshot 6](https://github.com/tTomeRr/Flex/assets/129614080/3965a814-62bb-45b8-977e-55d5423d211e)
+![Screenshot 1](images/app1.png)
+![Screenshot 2](images/app2.png)
+![Screenshot 3](images/app3.png)
+![Screenshot 4](images/app4.png)
+![Screenshot 5](images/app5.png)
+![Screenshot 6](images/app6.png)
