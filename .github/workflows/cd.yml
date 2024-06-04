@@ -6,7 +6,7 @@ on:
     types:
       - completed
 env:
-       TF_CLOUD_ORGANIZATION: "yishai248"
+       TF_CLOUD_ORGANIZATION: "yishai9300"
        TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
        TF_WORKSPACE: "flex-app-cloud"
        CONFIG_DIRECTORY: "./terraform/"

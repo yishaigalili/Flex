@@ -8,7 +8,7 @@ terraform {
   }
 
   cloud {
-    organization = "tomerc248"
+    organization = "yishai9300"
     workspaces {
       name = "flex-app-cloud"
     }

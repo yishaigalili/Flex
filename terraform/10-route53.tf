@@ -1,11 +1,11 @@
 data "aws_route53_zone" "primary" {
-  name = "tomer-cohen.com"
+  name = "yishai-galili.com"
   private_zone = false
 }
 
 resource "aws_route53_record" "www" {
   zone_id = data.aws_route53_zone.primary.zone_id
-  name    = "tomer-cohen.com"
+  name    = "yishai-galili.com"
   type    = "A"
 
   alias {
