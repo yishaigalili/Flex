@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FLEX</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/core.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bg"></div>
+
+<!-- ============================================ -->
+<!--                    Section 1                 -->
+<!-- ============================================ -->
+
+<section id="hero-82">
+    <div class="cs-container">
+        <h1 class="cs-title">FLEX</h1>
+        <p class="cs-text">
+    With more than <span class="text">{{ workouts_count }}+</span> workouts and over <span class="text">{{ exercises_count }}+</span> unique exercises,
+    Flex will help you create your ideal workout routine.
+    Simply input your workout preferences,
+    and we'll handle the rest. So, what are you waiting for?
+</p>
+        <a href="{{ url_for('main.workout') }}" class="cs-button-solid">Start Now</a>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="../static/images/gym.jpg"/>
+        <source media="(min-width: 601px)" srcset="../static/images/gym.jpg"/>
+        <img
+                loading="lazy"
+                decoding="async"
+                src="../static/images/gym.jpg"
+                alt="kitchen"
+                width="2250"
+                height="1500"
+                aria-hidden="true"
+        />
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Section 2                  -->
+<!-- ============================================ -->
+
+<section id="steps-889">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">How It Works</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img
+                            class="cs-icon"
+                            src="../static/svg/footprint.svg"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                    />
+                </picture>
+                <h3 class="cs-h3">Step 1: Start Your Fitness Adventure!</h3>
+                <p class="cs-item-p">
+                    Tell us a bit about yourself, and we'll tailor a workout that
+                    perfectly fits you.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img
+                        class="cs-arrow-img"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+                        alt="icon"
+                        width="80"
+                        height="76"
+                        loading="lazy"
+                        decoding="async"
+                        aria-hidden="true"
+                />
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img
+                            class="cs-icon"
+                            src="../static/svg/robot.svg"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                    />
+                </picture>
+                <h3 class="cs-h3">Step 2: Your Customized Workout Awaits</h3>
+                <p class="cs-item-p">
+                    Our algorithm crafts a unique workout based on your details.
+                </p>
+            </li>
+            <!--Arrow-->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img
+                        class="cs-arrow-img"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Farrow-curve-right.svg"
+                        alt="icon"
+                        width="80"
+                        height="76"
+                        loading="lazy"
+                        decoding="async"
+                        aria-hidden="true"
+                />
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img
+                            class="cs-icon"
+                            src="../static/svg/fitnees.svg"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                    />
+                </picture>
+                <h3 class="cs-h3">Step 3: Time to move, Dive into the Fun!</h3>
+                <p class="cs-item-p">
+                    Lace up, hit play, and enjoy a workout personalized to meet your
+                    goals.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-718">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source
+                    media="(max-width: 600px)"
+                    srcset="../static/images/running.jpg"
+            />
+            <source
+                    media="(min-width: 601px)"
+                    srcset="../static/images/running.jpg"
+            />
+            <img
+                    decoding="async"
+                    src="../static/images/running.jpg"
+                    alt="runner"
+                    width="610"
+                    height="425"
+                    aria-hidden="true"
+            />
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch</h2>
+            <p class="cs-text">
+                Have questions, feedback, or just want to chat about your fitness
+                journey? We're here for you! Our dedicated team is ready to assist
+                you. Whether you need assistance with our app, have suggestions for
+                improvement, or simply want to share your success stories, don't
+                hesitate to reach out.
+            </p>
+            <!--Form-->
+            <form
+                    class="cs-form"
+                    id="cs-form-718"
+                    name="Contact Form"
+                    method="POST"
+                    action="{{ url_for('main.index') }}"
+            >
+                <label class="cs-label">
+                    Name
+                    <input
+                            class="cs-input"
+                            required
+                            type="text"
+                            id="name-718"
+                            name="name"
+                            placeholder="Name"
+                    />
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input
+                            class="cs-input"
+                            required
+                            type="text"
+                            id="email-718"
+                            name="email"
+                            placeholder="Email"
+                    />
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input
+                            class="cs-input"
+                            required
+                            type="text"
+                            id="phone-718"
+                            name="phone"
+                            placeholder="Phone"
+                    />
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea
+                            class="cs-input cs-textarea"
+                            required
+                            name="Message"
+                            id="message-718"
+                            placeholder="Write message..."
+                    ></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-107">
+    <div class="cs-container">
+        <ul class="cs-ul">
+            <li> This is a test/li>
+            <!-- <li>This is a test</li> -->
+            <li>© {{year}} Flex Inc</li>
+            <li>Welcome to my personal project! Please note that this site is a creative and experimental space for me to explore and develop my skills. It is not intended to be a professional or commercially useful platform. Enjoy browsing, and thank you for your understanding and support!</li>
+        </ul>
+    </div>
+</footer>
+
+<!-- ============================================ -->
+<!--      Popup For sending contact message       -->
+<!-- ============================================ -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText">Some text in the Modal..</p>
+    </div>
+</div>
+
+<script>
+
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+function showModal(message) {
+  document.getElementById("modalText").innerHTML = message;
+  modal.style.display = "block";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<script type="text/javascript">
+      window.onload = function() {
+        showModal("{{ messages[0] }}");
+      };
+
+</script>
+{% endif %}
+{% endwith %}
+
+
+</body>
+</html>

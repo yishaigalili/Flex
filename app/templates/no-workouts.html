@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/core.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/ai.css" />
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+  </head>
+  <body>
+
+    <div class="bg"></div>
+    <div class="overlay" id="overlay"></div>
+
+
+    <section id="cta-1071">
+      <div class="cs-container">
+              <img  src="../static/images/loading.gif" id="loadingGif" style="display: none; position: absolute; top: 150px; z-index: 3"   alt="Loading...">
+
+          <div class="cs-content">
+              <div class="cs-flex">
+                  <span class="cs-topper">OH NO! We couldn't find a workout for you....</span>
+                  <h2 class="cs-title">Do you want us to build you a workout using AI?</h2>
+              </div>
+              <div class="cs-button-box">
+    <!-- Begin form -->
+    <form action="{{ url_for('main.ai_workout') }}" method="post">
+    <!-- Hidden fields to retain the parameters -->
+    <input type="hidden" name="duration" value="{{ request.args.get('duration') }}">
+    <input type="hidden" name="fitness_level" value="{{ request.args.get('fitness_level') }}">
+    <input type="hidden" name="fitness_goal" value="{{ request.args.get('fitness_goal') }}">
+    <input type="hidden" name="equipment_access" value="{{ request.args.get('equipment_access') }}">
+    <input type="hidden" name="running_type" value="{{ request.args.get('running_type') }}">
+
+    <!-- Submit button -->
+    <button type="submit" class="cs-button-solid">Generate now</button>
+
+</form>
+
+    <!-- Link to go back -->
+    <a href="{{ url_for('main.workout') }}" class="cs-button-transparent">Go back</a>
+</div>
+
+          </div>
+      </div>
+      <picture class="cs-background">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="../static/images/robot.png">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="../static/images/robot.png">
+          <img loading="lazy" decoding="async" src="../static/images/robot.png" alt="mechanic" width="1280" height="568">
+      </picture>
+    </section>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
+    var loadingGif = document.getElementById('loadingGif');
+    var overlay = document.getElementById('overlay');
+
+    form.addEventListener('submit', function() {
+        // Show the loading GIF and the overlay
+        loadingGif.style.display = 'block';
+        overlay.style.display = 'block';
+    });
+});
+
+        </script>
+
+
+
+  </body>
+</html>
